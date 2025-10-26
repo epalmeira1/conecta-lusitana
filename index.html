@@ -1,137 +1,132 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Conecta Lusitana — Chegada Segura a Portugal</title>
-  <meta name="description" content="Conecta Lusitana — informação real e comunidade para brasileiros que querem morar em Portugal." />
-  <!-- Tailwind Play CDN (rápido para páginas estáticas) -->
-  <script src="https://cdn.tailwindcss.com"></script>
-  <style>
-    /* pequenas customizações */
-    .gradient-hero { background: linear-gradient(180deg, #FEF3F2 0%, #FFFFFF 100%); }
-  </style>
-  <link rel="icon" href="/images/favicon.png" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Conecta Lusitana</title>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="https://raw.githubusercontent.com/epalmeira1/conecta-lusitana/refs/heads/main/favicon.ico">
+
+    <!-- Estilos -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f7fa;
+            color: #003459;
+        }
+
+        header {
+            background-color: #003459;
+            padding: 20px 0;
+            text-align: center;
+            color: white;
+            font-size: 28px;
+            font-weight: bold;
+        }
+
+        nav {
+            background-color: #0077B6;
+            padding: 12px;
+            text-align: center;
+        }
+
+        nav a {
+            color: #ffffff;
+            text-decoration: none;
+            font-weight: bold;
+            margin: 0 15px;
+            font-size: 18px;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        section {
+            max-width: 900px;
+            margin: 40px auto;
+            text-align: center;
+            line-height: 1.6;
+        }
+
+        h2 {
+            color: #003459;
+            font-size: 26px;
+        }
+
+        .cta-button {
+            margin-top: 20px;
+            display: inline-block;
+            padding: 14px 26px;
+            background-color: #0077B6;
+            color: #ffffff;
+            font-size: 20px;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .cta-button:hover {
+            background-color: #005f91;
+        }
+
+        footer {
+            background-color: #003459;
+            color: white;
+            text-align: center;
+            padding: 16px;
+            margin-top: 40px;
+            font-size: 14px;
+        }
+    </style>
 </head>
-<body class="antialiased text-gray-900">
 
-  <!-- NAV -->
-  <header class="fixed w-full bg-white/90 backdrop-blur-sm border-b z-40">
-    <div class="max-w-6xl mx-auto px-4 py-4 flex items-center justify-between">
-      <div class="flex items-center gap-3">
-        <div class="w-10 h-10 rounded-full bg-red-700 flex items-center justify-center text-white text-lg">🇵🇹</div>
-        <div class="font-bold text-xl text-red-700">Conecta Lusitana</div>
-      </div>
-      <nav class="hidden md:flex gap-6 text-sm text-gray-700">
-        <a href="#home" class="hover:text-red-600">Home</a>
-        <a href="#about" class="hover:text-red-600">Quem somos</a>
-        <a href="#services" class="hover:text-red-600">O que oferecemos</a>
-        <a href="#contact" class="hover:text-red-600">Contato</a>
-      </nav>
-    </div>
-  </header>
+<body>
 
-  <!-- HERO -->
-  <main class="pt-24">
-    <section id="home" class="min-h-screen gradient-hero flex items-center">
-      <div class="max-w-5xl mx-auto px-6 py-24 text-center">
-        <div class="text-7xl mb-6">🏠🇵🇹</div>
-        <h1 class="text-4xl md:text-5xl font-extrabold mb-4">Informação real para uma chegada segura a Portugal</h1>
-        <p class="text-lg text-gray-700 mb-8">Guia prático e comunidade para brasileiros que querem evitar ciladas e começar com segurança.</p>
-        <div class="flex justify-center gap-4">
-          <a href="#contact" class="bg-red-700 text-white px-6 py-3 rounded-full font-semibold hover:bg-red-600">Quero me preparar</a>
-          <a href="#about" class="border border-gray-300 px-6 py-3 rounded-full text-gray-700">Saiba mais</a>
-        </div>
-        <p class="text-sm text-gray-500 mt-8">Kit: <strong>“Kit Chegada Portugal – Edição Aveiro”</strong> • Acesso ao grupo no Telegram</p>
-      </div>
-    </section>
+    <header>🇵🇹 Conecta Lusitana</header>
 
-    <!-- ABOUT -->
-    <section id="about" class="bg-white py-16">
-      <div class="max-w-4xl mx-auto px-6 text-center">
-        <h2 class="text-3xl font-bold text-red-700 mb-4">Quem somos</h2>
-        <p class="text-gray-700 mb-6">Somos brasileiros que já moram em Portugal e reunimos experiências reais — alertas, dicas e contatos — para quem está planejando a mudança.</p>
-        <div class="flex flex-col md:flex-row gap-6 justify-center">
-          <div class="p-6 bg-gray-50 rounded-xl shadow-sm w-full">
-            <div class="text-4xl mb-2">⚠️</div>
-            <h3 class="font-semibold mb-2">Evite golpes</h3>
-            <p class="text-gray-600">Dicas práticas para não cair em ofertas de trabalho escravo ou alugueis fraudulentos.</p>
-          </div>
-          <div class="p-6 bg-gray-50 rounded-xl shadow-sm w-full">
-            <div class="text-4xl mb-2">📑</div>
-            <h3 class="font-semibold mb-2">Documentação</h3>
-            <p class="text-gray-600">Checklist da documentação necessária e onde tratar de cada item em Portugal.</p>
-          </div>
-        </div>
-      </div>
-    </section>
+    <nav>
+        <a href="#about">Sobre</a>
+        <a href="#services">Serviços</a>
+        <a href="#contact">Contato</a>
+        <a href="https://t.me/ConectaLusitana_bot" target="_blank">Telegram 🤝</a>
+    </nav>
 
-    <!-- SERVICES -->
-    <section id="services" class="py-16 bg-gray-50">
-      <div class="max-w-6xl mx-auto px-6">
-        <h2 class="text-3xl font-bold text-center text-red-700 mb-10">O que oferecemos</h2>
-        <div class="grid md:grid-cols-3 gap-6">
-          <div class="bg-white p-6 rounded-xl shadow">
-            <div class="text-5xl mb-3">📘</div>
-            <h3 class="font-semibold mb-2">Guia Digital</h3>
-            <p class="text-gray-600">PDF com passos essenciais: documentação, moradia, trabalho e segurança.</p>
-          </div>
-          <div class="bg-white p-6 rounded-xl shadow">
-            <div class="text-5xl mb-3">👥</div>
-            <h3 class="font-semibold mb-2">Comunidade</h3>
-            <p class="text-gray-600">Grupo privado no Telegram para troca de informações e avisos reais.</p>
-          </div>
-          <div class="bg-white p-6 rounded-xl shadow">
-            <div class="text-5xl mb-3">🔎</div>
-            <h3 class="font-semibold mb-2">Contatos Curados</h3>
-            <p class="text-gray-600">Lista de corretores, alojamentos temporários e serviços que você pode contatar (sem garantias).</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- BENEFITS -->
-    <section class="py-16 bg-white">
-      <div class="max-w-5xl mx-auto px-6 text-center">
-        <h2 class="text-2xl font-bold mb-6">Por que escolher a Conecta Lusitana?</h2>
-        <div class="grid md:grid-cols-3 gap-6">
-          <div class="p-6 bg-gray-50 rounded-lg"> <h4 class="font-semibold mb-2">Segurança</h4><p class="text-gray-600">Orientação para reduzir riscos.</p></div>
-          <div class="p-6 bg-gray-50 rounded-lg"> <h4 class="font-semibold mb-2">Economia</h4><p class="text-gray-600">Evite custos com erros e golpes.</p></div>
-          <div class="p-6 bg-gray-50 rounded-lg"> <h4 class="font-semibold mb-2">Rapidez</h4><p class="text-gray-600">Informações objetivas para agir rápido.</p></div>
-        </div>
-      </div>
-    </section>
-
-    <!-- CONTACT -->
-    <section id="contact" class="py-16 bg-gray-50">
-      <div class="max-w-3xl mx-auto px-6 text-center">
-        <h2 class="text-3xl font-bold text-red-700 mb-4">Contato / Inscrição</h2>
-        <p class="text-gray-700 mb-6">Deixe seu e-mail para receber o guia e o link da comunidade (ou envie uma mensagem direta).</p>
-
-        <!-- form simples via mailto como fallback (sem backend) -->
-        <form action="mailto:seuemail@gmail.com" method="post" enctype="text/plain" class="flex flex-col sm:flex-row gap-3 justify-center">
-          <input name="email" type="email" placeholder="Seu e-mail" required class="px-4 py-3 rounded-lg border border-gray-300 flex-1" />
-          <button type="submit" class="bg-red-700 text-white px-6 py-3 rounded-lg font-semibold">Enviar</button>
-        </form>
-
-        <p class="text-xs text-gray-500 mt-4">
-          Observação: <strong>Conecta Lusitana</strong> fornece apenas informações e orientações. Não nos responsabilizamos por contratos de trabalho ou alojamento.
+    <section id="about">
+        <h2>Bem-vindo à Conecta Lusitana!</h2>
+        <p>
+            Auxiliamos brasileiros com **documentação, processos legais, moradia e integração em Portugal**.  
+            Nosso objetivo é tornar sua mudança mais **segura e simples**.
         </p>
-      </div>
     </section>
-  </main>
 
-  <!-- FOOTER -->
-  <footer class="bg-white border-t py-8">
-    <div class="max-w-6xl mx-auto px-6 text-center text-gray-600">
-      <p>© <span id="year"></span> Conecta Lusitana — Informação real para brasileiros em Portugal.</p>
-      <p class="text-sm mt-2">Feito por Eduardo Oliveira • Aveiro, Portugal 🇵🇹</p>
-    </div>
-  </footer>
+    <section id="services">
+        <h2>Serviços Disponíveis 🧳</h2>
+        <p>📌 Consultoria de imigração</p>
+        <p>📌 Assessoria de NIF, NISS, Abertura de conta</p>
+        <p>📌 Apoio completo para integração</p>
+        <p>📌 Atendimento direto via Telegram</p>
 
-  <script>
-    // ano no rodapé
-    document.getElementById('year').innerText = new Date().getFullYear();
-  </script>
+        <a class="cta-button" href="https://t.me/ConectaLusitana_bot" target="_blank">
+            📩 Fale com a gente no Telegram
+        </a>
+    </section>
+
+    <section id="contact">
+        <h2>Fale Conosco 💬</h2>
+        <p>Nosso atendimento é 100% online e rápido.</p>
+
+        <a class="cta-button" href="https://t.me/ConectaLusitana_bot" target="_blank">
+            👉 Acessar atendimento no Telegram
+        </a>
+    </section>
+
+    <footer>
+        © 2025 Conecta Lusitana — Todos os direitos reservados
+    </footer>
+
 </body>
 </html>
