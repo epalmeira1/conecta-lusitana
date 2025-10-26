@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Conecta Lusitana</title>
     
-    <!-- Favicon -->
     <link rel="icon" type="image/x-icon" href="https://raw.githubusercontent.com/epalmeira1/conecta-lusitana/refs/heads/main/favicon.ico">
 
     <style>
@@ -64,6 +63,31 @@
             margin-bottom: 30px;
         }
 
+        /* NOVO ESTILO: Container de Sobre Nós para dividir em duas colunas */
+        .about-content {
+            display: flex;
+            align-items: flex-start; /* Alinha o conteúdo ao topo */
+            gap: 40px;
+            margin-top: 20px;
+        }
+
+        .about-text {
+            flex: 1; /* Ocupa o espaço restante */
+        }
+
+        .about-image {
+            flex-shrink: 0; /* Não permite que a imagem encolha */
+            max-width: 300px; /* Limita o tamanho da imagem */
+        }
+
+        .about-image img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px; /* Borda levemente arredondada para a imagem */
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Sombra suave */
+        }
+        /* FIM DO NOVO ESTILO */
+
         .services, .visa {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
@@ -113,6 +137,18 @@
             text-align: center;
             padding: 20px;
             margin-top: 40px;
+            font-size: 0.9em;
+        }
+        
+        @media (max-width: 768px) {
+            .about-content {
+                flex-direction: column; /* Em telas pequenas, empilha a imagem e o texto */
+            }
+            .about-image {
+                max-width: 100%;
+                order: -1; /* Coloca a imagem no topo da seção em telas pequenas */
+                margin-bottom: 20px;
+            }
         }
     </style>
 </head>
@@ -136,8 +172,20 @@
 
 <section id="sobre">
     <h2>Sobre Nós</h2>
-    <p>Somos brasileiros em Portugal e sabemos exatamente os desafios enfrentados ao chegar aqui.</p>
-    <p>Nosso objetivo é te orientar com clareza para que você evite golpes, furadas e trabalhos abusivos.</p>
+    <div class="about-content">
+        <div class="about-text">
+            <p>Somos brasileiros em Portugal e sabemos exatamente os desafios enfrentados ao chegar aqui.</p>
+            <p>Nosso objetivo é te orientar com clareza para que você evite golpes, furadas e trabalhos abusivos.</p>
+            
+            <p style="font-weight: bold; margin-top: 20px;">
+                Com mais de quatro anos vivendo em Portugal, nossa experiência pessoal e profissional se traduz em um conhecimento prático e atualizado. Estamos prontos para guiar você desde a primeira documentação até a adaptação cultural, oferecendo um suporte real, de quem já passou por tudo isso.
+            </p>
+        </div>
+        
+        <div class="about-image">
+            <img src="https://raw.githubusercontent.com/epalmeira1/conecta-lusitana/main/images/Copia_de_Grey_and_Green_Kerala_Travel_Instagram_Post_2_-removebg-preview.png" alt="Imagem ilustrativa de quem faz a realocação para Portugal">
+        </div>
+    </div>
 </section>
 
 <section id="servicos">
@@ -155,4 +203,14 @@
 
         <div class="card">
             <h3>Moradia</h3>
-            <p>Como encontrar uma casa com segura
+            <p>Como encontrar uma casa com segurança, longe de fraudes e com contratos justos.</p>
+        </div>
+        
+    </div>
+</section>
+<footer>
+    <p>&copy; 2025 Conecta Lusitana. Todos os direitos reservados.</p>
+</footer>
+
+</body>
+</html>
