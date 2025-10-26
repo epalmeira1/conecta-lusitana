@@ -63,28 +63,26 @@
             margin-bottom: 30px;
         }
 
-        /* NOVO ESTILO: Container de Sobre Nós para dividir em duas colunas */
+        /* REMOVENDO A ESTRUTURA DE DUAS COLUNAS para Sobre Nós (Agora só tem texto) */
         .about-content {
-            display: flex;
-            align-items: flex-start; /* Alinha o conteúdo ao topo */
-            gap: 40px;
+            display: block; /* Volta a ser um bloco de largura total */
             margin-top: 20px;
         }
-
-        .about-text {
-            flex: 1; /* Ocupa o espaço restante */
+        
+        /* NOVO ESTILO: Bloco de destaque para o Telegram */
+        .telegram-info {
+            background-color: #e0f7fa; /* Fundo azul claro */
+            padding: 25px;
+            border-radius: 8px;
+            border-left: 5px solid var(--secondary);
+            margin-top: 30px;
+            text-align: center;
         }
 
-        .about-image {
-            flex-shrink: 0; /* Não permite que a imagem encolha */
-            max-width: 300px; /* Limita o tamanho da imagem */
-        }
-
-        .about-image img {
-            width: 100%;
-            height: auto;
-            border-radius: 8px; /* Borda levemente arredondada para a imagem */
-            box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Sombra suave */
+        .telegram-info h3 {
+            color: var(--primary);
+            margin-top: 0;
+            font-size: 1.5em;
         }
         /* FIM DO NOVO ESTILO */
 
@@ -139,17 +137,6 @@
             margin-top: 40px;
             font-size: 0.9em;
         }
-        
-        @media (max-width: 768px) {
-            .about-content {
-                flex-direction: column; /* Em telas pequenas, empilha a imagem e o texto */
-            }
-            .about-image {
-                max-width: 100%;
-                order: -1; /* Coloca a imagem no topo da seção em telas pequenas */
-                margin-bottom: 20px;
-            }
-        }
     </style>
 </head>
 <body>
@@ -173,18 +160,23 @@
 <section id="sobre">
     <h2>Sobre Nós</h2>
     <div class="about-content">
-        <div class="about-text">
-            <p>Somos brasileiros em Portugal e sabemos exatamente os desafios enfrentados ao chegar aqui.</p>
-            <p>Nosso objetivo é te orientar com clareza para que você evite golpes, furadas e trabalhos abusivos.</p>
-            
-            <p style="font-weight: bold; margin-top: 20px;">
-                Com mais de quatro anos vivendo em Portugal, nossa experiência pessoal e profissional se traduz em um conhecimento prático e atualizado. Estamos prontos para guiar você desde a primeira documentação até a adaptação cultural, oferecendo um suporte real, de quem já passou por tudo isso.
-            </p>
-        </div>
         
-        <div class="about-image">
-            <img src="https://raw.githubusercontent.com/epalmeira1/conecta-lusitana/main/images/Copia_de_Grey_and_Green_Kerala_Travel_Instagram_Post_2_-removebg-preview.png" alt="Imagem ilustrativa de quem faz a realocação para Portugal">
+        <p>Somos brasileiros em Portugal e sabemos exatamente os desafios enfrentados ao chegar aqui. Nosso objetivo é te orientar com clareza para que você evite golpes, furadas e trabalhos abusivos.</p>
+        
+        <div class="telegram-info">
+            <h3>Evite os Erros Mais Caros e Comuns na Chegada!</h3>
+            <p>A experiência de anos em Portugal nos permitiu coletar **informações privilegiadas** sobre:</p>
+            
+            <ul>
+                <li>**Moradias em Aveiro:** Onde procurar, valores reais e como fugir de contratos abusivos.</li>
+                <li>**Golpes e Fraudes Comuns:** Guia prático do que NUNCA fazer ao buscar emprego ou alugar imóveis em solo europeu.</li>
+            </ul>
+            
+            <p style="font-weight: bold; margin-bottom: 20px;">Todo esse conhecimento exclusivo está disponível gratuitamente no nosso canal oficial:</p>
+            
+            <a class="telegram-btn" href="https://t.me/ConectaLusitana_bot" target="_blank" style="margin-top: 15px;">Acesse as Informações Exclusivas no Telegram</a>
         </div>
+
     </div>
 </section>
 
